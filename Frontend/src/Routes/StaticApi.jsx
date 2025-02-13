@@ -1,5 +1,11 @@
-import projectImage1 from "../../assets/images/ab.jpg";
-import projectImage2 from "../../assets/images/a.png";
+import ecommerce from "../../assets/images/ecommerce.png";
+import carebridge from "../../assets/images/carebridge.png";
+import bbc from "../../assets/images/bbc.png";
+// import puferfish from "../../assets/images/puferfish.jpg";
+import puferfish from "../../assets/images/2.png";
+
+carebridge
+
 
 export const project = [
   {
@@ -8,7 +14,7 @@ export const project = [
     title: "E-Commerce",
     description: "Developed a full-featured MERN stack e-commerce platform with product listings, user authentication, and secure payment integration.",
     skillUsed:'MongoDB,Express,NodeJS,React',
-    image: projectImage1,
+    image: ecommerce,
     Livelink: "https://exclusiveclientside.vercel.app",
     gitHub: "https://github.com/ashiq-bhatti/Exclusive",
   },
@@ -18,7 +24,7 @@ export const project = [
     title: "Doctor Appointment System",
     description: "Created a MERN stack website for finding and booking doctors by specialty, city, and disease with authentication",
     skillUsed:'MongoDB,Express,NodeJS,React',
-    image: projectImage2,
+    image: carebridge,
     Livelink: "https://example.com",
     gitHub: "https://github.com/ashiq-bhatti/CareBridge",
   },
@@ -29,7 +35,7 @@ export const project = [
     description: "Recreated the BBC News homepage using HTML and CSS with a responsive and pixel-perfect design.",
     skillUsed:'HTML ,CSS',
 
-    image: projectImage2,
+    image: bbc,
     Livelink: "https://bbc-home-page.vercel.app",
     gitHub: "https://github.com/ashiq-bhatti/BBC",
   },
@@ -39,7 +45,7 @@ export const project = [
     title: "Pufferfish",
     description: "Created a pufferfish  using HTML and CSS with smooth and responsive design.",
     skillUsed:'HTML , CSS',
-    image: projectImage1,
+    image: puferfish,
     Livelink: "https://puffer-fish.vercel.app",
     gitHub: "https://github.com/ashiq-bhatti/Puffer-Fish",
   },

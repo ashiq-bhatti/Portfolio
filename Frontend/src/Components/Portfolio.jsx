@@ -42,7 +42,7 @@ const Portfolio = () => {
         <Slider ref={sliderRef} {...sliderSetting} className="">
           {project.map((project) => (
             <div key={project._id} className=" ">
-              <div className="bg-slate- rounded-lg shadow-lg  flex flex-col-reverse lg:flex-row justify-center  lg:w-full items-center my-10  ">
+              <div className=" rounded-lg  flex flex-col-reverse lg:flex-row justify-center  lg:w-full items-center my-10  ">
                 <div className="p-8 w-full lg:w-1/2 ">
                   <h1 className="text-white text-2xl md:text-4xl font-bold">
                     {project._id}

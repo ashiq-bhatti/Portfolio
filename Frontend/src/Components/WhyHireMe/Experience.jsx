@@ -1,6 +1,12 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Experience = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000,
+    });
+  },[])
   return (
     <div>
       <div className="resumedetails right flex-1 rounded-lg  text-white">
@@ -14,7 +20,7 @@ const Experience = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 pt-5">
-          <div className="experience bg-slate-800 rounded-lg p-4 flex-1">
+          <div className="experience bg-slate-800 rounded-lg p-4 flex-1" data-aos='fade-right'>
             <p className="text-green-500">2024 - Present</p>
             <h1 className="text-lg font-semibold">
               <span className="w-2 h-2 bg-green-600 rounded-full"></span>
@@ -32,7 +38,7 @@ const Experience = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="experience bg-slate-800 rounded-lg p-4 flex-1">
+          <div className="experience bg-slate-800 rounded-lg p-4 flex-1" data-aos='fade-left'>
             <p className="text-green-500">2024 - Present</p>
             <h1 className="text-lg font-semibold">
               <span className="w-2 h-2 bg-green-600 rounded-full"></span>

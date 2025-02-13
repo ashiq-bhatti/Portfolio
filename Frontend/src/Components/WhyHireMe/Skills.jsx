@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io";
@@ -7,7 +7,8 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
 import { SiVite } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Skills = () => {
   const [hoveredBox, setHoveredBox] = useState(null);
 
@@ -18,11 +19,18 @@ const Skills = () => {
   const handleMouseLeave = () => {
     setHoveredBox(null);
   };
-
+  useEffect(() => {
+    AOS.init(
+      {
+        duration: 2000,
+      },
+      []
+    );
+  });
   return (
     <div>
       <div className="resumedetails right flex-1 rounded-lg p-5 text-white">
-      <h1 className="text-xl flex gap-2 md:text-2xl lg:text-3xl font-bold text-green-500 mb-4 text-center">
+        <h1 className="text-xl flex gap-2 md:text-2xl lg:text-3xl font-bold text-green-500 mb-4 text-center">
           <span className="text-white">My</span>
           Skills
         </h1>
@@ -32,7 +40,7 @@ const Skills = () => {
           Education
         </p>
 
-        <div className="flex flex-wrap justify-between gap-4 pt-5">
+        <div className="flex flex-wrap justify-between gap-4 pt-5" data-aos='fade-down'>
           <div
             className="experience bg-slate-800 rounded-lg p-6 relative flex items-center justify-center"
             onMouseEnter={() => handleMouseEnter("HTML")}
@@ -86,7 +94,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-4 pt-5">
+        <div className="flex flex-wrap justify-between gap-4 pt-5" data-aos='fade-up'>
           <div
             className="experience bg-slate-800 rounded-lg p-6 relative flex items-center justify-center"
             onMouseEnter={() => handleMouseEnter("js")}

@@ -15,9 +15,9 @@ const Header = () => {
         to="hero"
         smooth={true}
         duration={500}
-        className="text-2xl text-white hover:text-green-500 transition duration-300 cursor-pointer"
+        className="text-2xl text-white font-semibold hover:text-green-500 transition duration-300 cursor-pointer"
       >
-        Ashiq Hussain
+        A.H
       </Link>
 
       {/* Mobile Menu Icon */}
