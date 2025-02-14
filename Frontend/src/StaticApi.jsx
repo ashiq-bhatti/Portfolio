@@ -1,7 +1,7 @@
-import ecommerce from "../../assets/images/ecommerce.png";
-import carebridge from "../../assets/images/carebridge.png";
-import bbc from "../../assets/images/bbc.png";
-import puferfish from "../../assets/images/puferfish.png";
+import ecommerce from "../assets/images/ecommerce.png";
+import carebridge from "../assets/images/carebridge.png";
+import bbc from "../assets/images/bbc.png";
+import puferfish from "../assets/images/puferfish.png";
 
 carebridge
 

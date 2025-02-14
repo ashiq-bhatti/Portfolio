@@ -7,7 +7,7 @@ const WhyHire = () => {
   const [activeSection, setActiveSection] = useState("experience");
 
   return (
-    <div className="bg-slate-900 py-10">
+    <div className="bg-slate-900 pb-10 pt-16">
       <div className="bg-slate-900 w-[90%] md:w-[84%] mx-auto flex flex-col lg:flex-row  gap-8">
         {/* Left Section - 50% width */}
         <div className="left text-white flex-1 w-full lg:1/3">

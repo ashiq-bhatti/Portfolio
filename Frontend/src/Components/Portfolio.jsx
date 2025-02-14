@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa6";
-import { project } from "../Routes/StaticApi";
+import { project } from "../StaticApi";
 import { RiDragMoveLine } from "react-icons/ri";
 import { useRef } from "react";
 import Slider from "react-slick";

@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io";
@@ -40,7 +40,10 @@ const Skills = () => {
           Education
         </p>
 
-        <div className="flex flex-wrap justify-between gap-4 pt-5" data-aos='fade-down'>
+        <div
+          className="flex flex-wrap justify-between gap-4 pt-5"
+          data-aos="fade-down"
+        >
           <div
             className="experience bg-slate-800 rounded-lg p-6 relative flex items-center justify-center"
             onMouseEnter={() => handleMouseEnter("HTML")}
@@ -51,7 +54,7 @@ const Skills = () => {
                 HTML5
               </div>
             )}
-            <FaHtml5 className="text-7xl xl:text-8xl" />
+            <FaHtml5 className="text-6xl xl:text-8xl " />
           </div>
 
           <div
@@ -64,7 +67,7 @@ const Skills = () => {
                 CSS3
               </div>
             )}
-            <IoLogoCss3 className="text-7xl  xl:text-8xl" />
+            <IoLogoCss3 className="text-6xl xl:text-8xl" />
           </div>
 
           <div
@@ -77,7 +80,7 @@ const Skills = () => {
                 Vite
               </div>
             )}
-            <SiVite className="text-7xl  xl:text-8xl" />
+            <SiVite className="text-6xl xl:text-8xl" />
           </div>
 
           <div
@@ -90,11 +93,14 @@ const Skills = () => {
                 Tailwind CSS
               </div>
             )}
-            <SiTailwindcss className="text-7xl md:   xl:text-8xl" />
+            <SiTailwindcss className="text-6xl xl:text-8xl" />
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-4 pt-5" data-aos='fade-up'>
+        <div
+          className="flex flex-wrap justify-between gap-4 pt-5"
+          data-aos="fade-up"
+        >
           <div
             className="experience bg-slate-800 rounded-lg p-6 relative flex items-center justify-center"
             onMouseEnter={() => handleMouseEnter("js")}
@@ -105,7 +111,7 @@ const Skills = () => {
                 JavaScript
               </div>
             )}
-            <FaJsSquare className="text-7xl xl:text-8xl" />
+            <FaJsSquare className="text-6xl xl:text-8xl" />
           </div>
 
           <div
@@ -118,7 +124,7 @@ const Skills = () => {
                 React
               </div>
             )}
-            <FaReact className="text-7xl   xl:text-8xl" />
+            <FaReact className="text-6xl xl:text-8xl" />
           </div>
 
           <div
@@ -131,7 +137,7 @@ const Skills = () => {
                 Node.js
               </div>
             )}
-            <IoLogoNodejs className="text-7xl  xl:text-8xl" />
+            <IoLogoNodejs className="text-6xl xl:text-8xl" />
           </div>
 
           <div
@@ -144,7 +150,7 @@ const Skills = () => {
                 MongoDB
               </div>
             )}
-            <SiMongodb className="text-7xl  xl:text-8xl" />
+            <SiMongodb className="text-6xl xl:text-8xl" />
           </div>
         </div>
       </div>

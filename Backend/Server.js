@@ -13,7 +13,7 @@ app.use(express.json());
 
 const Port = process.env.PORT || 3000;
 
-app.use('/api/contact', ContactRoutes); 
+app.use("/api/contact", ContactRoutes); 
 app.get("/", (req, res) => {
   res.send("Welcome to your Portfolio server");
 });
@@ -21,3 +21,4 @@ app.get("/", (req, res) => {
 app.listen(Port, () => {
   console.log(`Server is running on port ${Port}`);
 });
+ 
