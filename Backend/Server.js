@@ -3,13 +3,17 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const DbConnection = require("./Utils/Db.js");
 const ContactRoutes = require("./Routes/ContactRoutes.js");
+const cookieParser = require("cookie-parser");
  
 dotenv.config();
-DbConnection();
- 
 const app = express();
+
+ 
 app.use(cors());
+app.use(cookieParser());
 app.use(express.json());
+
+DbConnection();
 
 const Port = process.env.PORT || 3000;
 
@@ -21,4 +25,4 @@ app.get("/", (req, res) => {
 app.listen(Port, () => {
   console.log(`Server is running on port ${Port}`);
 });
- 
+    
