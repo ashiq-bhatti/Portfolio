@@ -81,14 +81,14 @@ const Portfolio = () => {
                   <img
                     src={project.image}
                     alt="Project"
-                    className="w-full h-[400px] md:h-[500px] lg:h-[600px] "
+                    className="w-full h-[400px] md:h-[500px] lg:h-[550px] "
                   />
                 </div>
               </div>
             </div>
           ))}
         </Slider>
-        <div className="flex justify-end gap-3 ">
+        <div className="flex justify-end gap-3 -mt-24 lg:-mt-6 ">
           <button
             className="text-green-500 rounded-md border-2 border-green-500 text-3xl md:text-4xl"
             onClick={() => sliderRef.current.slickPrev()}

@@ -26,7 +26,7 @@ const Header = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex gap-10 font-semibold">
+      <div className="hidden md:flex gap-10 font-semibold ">
         <Link
           to="hero"
           smooth={true}
