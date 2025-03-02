@@ -97,7 +97,6 @@ const Contact = () => {
             <div className="w-full gap-5 flex flex-col md:flex-row">
               <input
                 type="text"
-                 
                 name="fullname"
                 value={formData.fullname}
                 onChange={handleChange}

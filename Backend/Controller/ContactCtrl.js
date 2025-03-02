@@ -6,7 +6,10 @@ const postContactMsg = async (req, res) => {
   if (!fullname || !phone || !email || !emailsubject || !message) {
     return res.status(400).json({ error: "Please fill all fields!" });
   }
-
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ error: "Invalid email format!" });
+  }
   try {
     const newContact = new ContactModel({ fullname, phone, email, emailsubject, message });
     await newContact.save();
